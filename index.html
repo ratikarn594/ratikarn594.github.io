@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width", initial-scale="1.0">
+        <title>My website</title>
+
+        <link rel="stylesheet" type="text/css"href="style.css"/>
+    </head>
+    <body>
+        <!-- Nav start -->
+        <nav>
+            <div class="logo">
+                <a href="#">Welcome To My Resume</a>
+            </div>
+
+            <ul class="menu">
+                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="Experience.html">Experience</a></li>
+                <li><a href="Project.html">Project</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+            </ul>  
+            
+        </nav>
+        <!-- Nav End -->
+
+        <!--Banner start -->
+        <section class="banner">
+           <div class="banner-info">
+                <img src="me1.png" alt="">
+                <h2>Hello everyone,My name is Ratikarn Mitprapan and you can call me Mhew.</h2>
+                <p>Now I'm 23 years old My major is electronic and  systems computer engineering, Faculty of Engineering and Industria Technology, Silpakorn University</p>
+            </div>
+        </section>
+        <!-- Banner end -->
+
+        <!-- Main Start -->
+        <main>
+            <div style="background-color: #EBD9B4">
+                <h3>About Me</h3>
+                <p>I am a 3rd years student of electronic and computer systems engineering, Faculty of Engineering and Industria Technology, Silpakorn University,  I am interested in software system.
+                 I am studied to used programming ,Arduino ,Proteuse,Dev C++,Visual Studio Code,Labview and Matlab. 
+                 I can use C,C++, Python language to write the program .
+                </p>
+                <img id="pictu" src="logoengineer.jpg" style=" width: 100%;
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;">
+            </div>
+
+            <div style="background-color: #F9EFDB">
+                <h3>Strengths</h3>
+                <p style="background-color: transparent;
+                border: 2px solid #638889;
+                padding: 15px;">Be intentional and responsible for your duties </p>
+                <p style="background-color: transparent;
+                border: 2px solid #9DBC98;
+                padding: 15px;">Able to work as a team</p>
+                <p style="background-color: transparent;
+                border: 2px solid #EBD9B4;
+                padding: 15px;">Be a punctual person</p>
+                
+                <h3>Weakness</h3>
+                <p style="background-color: transparent;
+                border: 2px solid #EBD9B4;
+                padding: 15px;">There is little work experience </p>
+                <p style="background-color: transparent;
+                border: 2px solid #9DBC98;
+                padding: 15px;">Experience</p>
+                <p style="background-color: transparent;
+                border: 2px solid #638889;
+                padding: 15px;">Decision</p>    
+            </div>
+
+            <div style="background-color: #EBD9B4">
+                <h3>My MiniProject</h3>
+                <p>Smart vegetable garden project by Arduino UNO R3 (Write C  language on arduino ide to obtain temperature, humidity, motor and write python language to know the value and control the motor rotation.)</p>
+                <!-- <img src="C:\Users\mewmh\OneDrive\เดสก์ท็อป\html,css\miniproject.png" style="width: 20%; "> -->
+                
+                <div style="display: block; margin-left: auto; margin-right: auto;">
+                    <img id="myImg" src="miniproject.png"  style="width: 30%;">
+                    <img id="myImg" src="good4.jpg"  style="width: 60%;">
+                </div>
+
+            <!-- The Modal -->
+            <div id="myModal" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="img01">
+            <div id="caption"></div>
+            </div>
+
+            <script>
+            // Get the modal
+            var modal = document.getElementById('myModal');
+
+            // Get the image and insert it inside the modal - use its "alt" text as a caption
+            var img = document.getElementById('myImg');
+            var modalImg = document.getElementById("img01");
+            var captionText = document.getElementById("caption");
+            img.onclick = function(){
+            modal.style.display = "block";
+            modalImg.src = this.src;
+            captionText.innerHTML = this.alt;
+            }
+
+            // Get the <span> element that closes the modal
+            var span = document.getElementsByClassName("close")[0];
+
+            // When the user clicks on <span> (x), close the modal
+            span.onclick = function() { 
+            modal.style.display = "none";
+            }
+            </script>
+
+            <h3>My Project</h3>
+            <p>From the needs of the executives, there is an idea to add product value. By bringing the exterior parts that are Accessories to increase the functionality of the product. Based on the needs of the executives, the Technical Department was assigned to set up an R&D team to survey consumer needs. Including testing workpieces, developing workpieces, and producing workpieces.</p>
+
+            </div>
+        </main>
+        <!-- Main end -->
+
+        <!-- Footer start -->
+        <footer>
+            <p>Made by Mhew Rjjm</p>
+        </footer>
+        <!-- Footer end -->
+    </body>
+</html>

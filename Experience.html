@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width", initial-scale="1.0">
+        <title>My website</title>
+        <link rel="stylesheet" type="text/css"href="style.css"/>
+    </head>
+    <body>
+        <!-- Nav start -->
+        <nav>
+            <div class="logo">
+                <a href="#">Welcome To My Resume</a>
+            </div>
+
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a class="active" href="Experience.html">Experience</a></li>
+                <li><a href="Project.html">Project</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+            </ul>  
+            
+        </nav>
+        <!-- Nav End -->
+
+        <!--header start -->
+        <section class="headerr">
+           <div class="headerr-info">
+                <h1>My Experience</h1>
+            </div>
+        </section>
+        <!-- header end -->
+
+        <!-- Mainn Start -->
+        <mainn  style="display: flex;">
+            <div class="column" style="background-color: #EBD9B4">
+                <h3 class="outset"; style="background-color: #F9EFDB;">Electrical engineering project to enhance wisdom</h3>
+                <div class="container">
+                    <div class="mySlides">
+                      <div class="numbertext">1 / 3</div>
+                      <img src="good1.jpg" style="width:55%; display:block; margin-right: auto; margin-left: auto;">
+                    </div>
+                  
+                    <div class="mySlides">
+                      <div class="numbertext">2 / 3</div>
+                      <img src="good2.jpg" style="width:55%; display:block; margin-right: auto; margin-left: auto;">
+                    </div>
+                  
+                    <div class="mySlides">
+                      <div class="numbertext">3 / 3</div>
+                      <img src="good3.jpg" style="width:55%; display:block; margin-right: auto; margin-left: auto;">
+                    </div>
+                      
+
+
+                    <a class="prev" onclick="plusSlides(-1)">❮</a>
+                    <a class="next" onclick="plusSlides(1)">❯</a>
+                   
+                  
+                    <div class="row">
+                      <div class="columnn">
+                            <img class="demo cursor" src="good1.jpg" style="width:100%;" onclick="currentSlide(1)">
+                      </div>
+                      <div class="columnn">
+                           <img class="demo cursor" src="good2.jpg" style="width:100%" onclick="currentSlide(2)">
+                      </div>
+                      <div class="columnn">
+                            <img class="demo cursor" src="good3.jpg" style="width:100%" onclick="currentSlide(3)">
+                      </div>
+                    </div>     
+                </div>
+            </div>
+     
+                <div class="column" style="background-color: #F9EFDB">
+                    <h3 class="outset"; style="background-color: #EBD9B4;">Cooperative education internship</h3>
+                    <p style="margin-top: 5px; margin-bottom: 13px; ">Toyota Gosei Asia Company Limited engages in business types. Wholesale and retail repair of automobiles and motorcycles, providing services Wholesale of new automotive parts and accessories.I got to train in the Technical R&D team.</p>
+                    <div class="mid">
+                        <img src="toyoda.jpg" style="width:50%; border-radius: 12px;">
+                        <img src="team.jpg" style="width:38%; border-radius: 12px;">
+                    </div>
+
+                    <video width="400" controls style="margin-top:20px ;">
+                        <source src="video.mp4">
+                    </video>
+
+
+                </div> 
+
+
+        </mainn>
+        <!-- Mainn end -->
+
+
+
+
+        <script>
+            let slideIndex = 1;
+            showSlides(slideIndex);
+            
+            function plusSlides(n) {
+              showSlides(slideIndex += n);
+            }
+            
+            function currentSlide(n) {
+              showSlides(slideIndex = n);
+            }
+            
+            function showSlides(n) {
+              let i;
+              let slides = document.getElementsByClassName("mySlides");
+              let dots = document.getElementsByClassName("demo");
+              let captionText = document.getElementById("caption");
+              if (n > slides.length) {slideIndex = 1}
+              if (n < 1) {slideIndex = slides.length}
+              for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+              }
+              for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" activee", "");
+              }
+              slides[slideIndex-1].style.display = "block";
+              dots[slideIndex-1].className += " activee";
+              captionText.innerHTML = dots[slideIndex-1].alt;
+            }
+            </script>        
+            
+        <!-- Footer start -->
+        <footer>
+            <p>Made by Mhew Rjjm</p>
+        </footer>
+        <!-- Footer end -->
+    </body>
+</html>
